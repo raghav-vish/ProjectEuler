@@ -7,3 +7,7 @@ while(True):
 		print(n)
 		break
 	n+=20
+
+'''
+Starting from 2520, keep incrementing by 20, until there is a number that has 1 to 20 all as its factors
+'''

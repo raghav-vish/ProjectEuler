@@ -9,6 +9,12 @@ i=1
 while(fac<=500):
 	n+=i
 	fac=factors(n)
-	print(i, n, fac)
+	#print(i, n, fac)
 	i+=1
 print(n)
+
+'''
+Keep generating triangle numbers by adding i, and incrementing i each time
+For each number generated, calculate the number of divisors
+If its over 500, break
+'''

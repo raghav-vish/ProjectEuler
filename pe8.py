@@ -8,3 +8,8 @@ for i in range(len(s)-13):
 	if(p>maxp):
 		maxp=p
 print(maxp)
+
+'''
+Store the number in a string
+For each contiguous substring of length 13, calculate the product, and store the maximum
+'''
