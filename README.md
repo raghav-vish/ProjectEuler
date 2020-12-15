@@ -1,5 +1,4 @@
 # ProjectEuler
-My solutions to ProjectEuler Questions
 
 This repository contains my solutions to the questions on ProjectEuler. 
 
