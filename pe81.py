@@ -6,16 +6,14 @@ for i in range(len(arr)):
 
 i=0
 j=0
-s=arr[0][0]
-while(i!=len(arr)-1 or j!=len(arr)-1):
-	if(i==len(arr)-1):
-		j+=1
-	elif(j==len(arr)-1):
-		i+=1
-	elif(arr[i+1][j]<arr[i][j+1]):
-		i+=1
-	else:
-		j+=1
-	s+=arr[i][j]
-	print(arr[i][j])
-print(s)
+n=len(arr)-1
+for i in range(n, -1, -1):
+	for j in range(n, -1, -1):
+		if(i<n and j<n):
+			arr[i][j]+=min(arr[i+1][j], arr[i][j+1])
+		elif(i<n):
+			arr[i][j]+=arr[i+1][j]
+		elif(j<n):
+			arr[i][j]+=arr[i][j+1]
+
+print(arr[0][0])
