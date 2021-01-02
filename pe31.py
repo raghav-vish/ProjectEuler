@@ -1,12 +1,14 @@
-count=1
-for pound1 in range(0, 3):
-	for pence50 in range(0, 5):
-		for pence20 in range(0, 11):
-			for pence10 in range(0, 21):
-				for pence5 in range(0, 41):
-					for pence2 in range(0, 101):
-						for pence1 in range(0, 201):
-							money=pound1*100 + pence50*50 + pence20*20 + pence10*10 + pence5*5 + pence2*2 + pence1
-							if(money==200):
+import time
+count=8
+start=time.time()
+for v100 in range(0, 200, 100):
+	for v50 in range(0, 200, 50):
+		for v20 in range(0, 200, 20):
+			for v10 in range(0, 200, 10):
+				for v5 in range(0, 200, 5):
+					for v2 in range(0, 200, 2):
+						for v1 in range(0, 200, 1):
+							if(v1+v2+v5+v10+v20+v50+v100==200):
 								count+=1
+print(time.time()-start)
 print(count)
